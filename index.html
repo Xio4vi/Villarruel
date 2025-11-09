@@ -3,11 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Xio4vi</title>
+  <title>Portafolio | Xiomara Villarruel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>¡Hola! Soy Xio 👋</h1>
-  <p>Bienvenido a mi portafolio personal. Aquí compartiré mis proyectos.</p>
+
+  <!-- Portada -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Xi<strong>omara Villarruel</strong></h1>
+      <p class="tagline">“Desarrollo sistemas que conectan tecnología con propósito.”</p>
+      <a href="#contacto" class="btn">Contáctame</a>
+    </div>
+  </header>
+
+  <!-- Sobre mí -->
+  <section class="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy una desarrolladora de sistemas apasionada por crear soluciones tecnológicas eficientes y humanas. 
+      Combino mi conocimiento técnico con una visión analítica y empática, buscando siempre optimizar procesos y mejorar la experiencia del usuario.
+    </p>
+  </section>
+
+  <!-- Valores Profesionales -->
+  <section class="valores">
+    <h2>Mis Valores Profesionales</h2>
+    <div class="valores-container">
+      <div class="valor">
+        <h3>Innovación</h3>
+        <p>Busco nuevas formas de resolver problemas mediante tecnología.</p>
+      </div>
+      <div class="valor">
+        <h3>Responsabilidad</h3>
+        <p>Cumplo con compromiso y ética cada proyecto en el que participo.</p>
+      </div>
+      <div class="valor">
+        <h3>Colaboración</h3>
+        <p>Creo que los mejores resultados se logran trabajando en equipo.</p>
+      </div>
+      <div class="valor">
+        <h3>Aprendizaje continuo</h3>
+        <p>La tecnología cambia, y yo evoluciono con ella.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctame</h2>
+    <p>¿Te gustaría trabajar conmigo o saber más sobre mis proyectos?</p>
+    <form action="https://formspree.io/f/xoqgzbqk" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="4" placeholder="Tu mensaje..." required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Xiomara Villarruel — Desarrolladora de Sistemas 💻</p>
+  </footer>
+
 </body>
 </html>
