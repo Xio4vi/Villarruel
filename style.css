@@ -41,7 +41,6 @@ body {
   color: var(--color-secundario);
 }
 
-/* Frase mejorada */
 .hero .tagline {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
@@ -169,14 +168,15 @@ body {
   text-align: center;
   padding: 80px 20px;
   background: var(--color-blanco);
-  display: none; /* oculto por defecto */
   opacity: 0;
-  transition: opacity 0.8s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.8s ease;
 }
 
-.contacto.fade-in {
+.contacto.show {
   opacity: 1;
-  display: block;
+  max-height: 1000px; /* suficiente para mostrar todo */
 }
 
 .contacto h2 {
