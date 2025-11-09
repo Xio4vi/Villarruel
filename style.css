@@ -134,14 +134,13 @@ body {
   color: var(--color-secundario);
 }
 
-/* Siempre en una sola línea */
 .valores-container {
   display: flex;
   justify-content: center;
   align-items: stretch;
   gap: 25px;
   flex-wrap: nowrap;
-  overflow-x: hidden; /* no scroll, se ajustan al ancho */
+  overflow-x: hidden;
 }
 
 .valor {
@@ -151,7 +150,7 @@ body {
   padding: 25px;
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
-  min-width: 0; /* para que se reduzcan proporcionalmente */
+  min-width: 0;
 }
 
 .valor:hover {
@@ -170,6 +169,14 @@ body {
   text-align: center;
   padding: 80px 20px;
   background: var(--color-blanco);
+  display: none; /* oculto por defecto */
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.contacto.fade-in {
+  opacity: 1;
+  display: block;
 }
 
 .contacto h2 {
@@ -192,6 +199,12 @@ input, textarea {
   border-radius: 10px;
   font-family: inherit;
   font-size: 1em;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--color-secundario);
+  box-shadow: 0 0 8px rgba(0,196,255,0.4);
+  outline: none;
 }
 
 button {
@@ -227,7 +240,6 @@ footer {
     text-align: center;
   }
 
-  /* En móvil, los valores se apilan suavemente */
   .valores-container {
     flex-wrap: wrap;
   }

@@ -12,8 +12,8 @@
   <header class="hero">
     <div class="hero-content">
       <h1><strong>Xiomara Villarruel</strong></h1>
-      <p class="tagline">“Desarrollo sistemas que conectan tecnología con propósito.”</p>
-      <a href="#contacto" class="btn">Contáctame</a>
+      <p class="tagline">“Transformo la tecnología en soluciones eficientes y significativas.”</p>
+      <a href="#" id="btn-contacto" class="btn">Contáctame</a>
     </div>
   </header>
 
@@ -71,6 +71,19 @@
   <footer>
     <p>© 2025 Xiomara Villarruel — Desarrolladora de Sistemas 💻</p>
   </footer>
+
+  <!-- Script para mostrar contacto -->
+  <script>
+    const btn = document.getElementById('btn-contacto');
+    const contacto = document.querySelector('.contacto');
+
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      contacto.style.display = 'block';
+      contacto.classList.add('fade-in'); // animación
+      contacto.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 
 </body>
 </html>
